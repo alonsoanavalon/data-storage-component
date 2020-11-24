@@ -30,7 +30,7 @@
 }
 
 .fylo {
-    min-width:100px;
+    min-width:200px;
     width:37%;
     max-width: 300px;
     background-color: #fff;
@@ -78,6 +78,7 @@
     height:30px;
     background-color: rgba(216, 216, 216, 0.425);
     padding:.4rem;
+    cursor: pointer;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -93,7 +94,7 @@
 
 
 .storage {
-    min-width: 250px;
+    min-width: 300px;
     width: 55%;
     max-width:600px;
     background-color: #fff;
@@ -196,7 +197,7 @@
     }
 
     .gb-left {
-        top:11rem;
+        top:12rem;
         bottom:0;
         left:0;
         right:0;
