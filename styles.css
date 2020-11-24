@@ -1,0 +1,216 @@
+*,
+*::after,
+*::before {
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+   
+    box-sizing: border-box;
+    font-family: "open sans";
+}
+
+.wrapper {
+    background-image: url("/blue-wallpaper-1.jpg");
+    background-position: center;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+
+    width:100%;
+    height:100vh;
+    flex-flow: wrap row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    align-content: center;
+   
+
+
+ 
+}
+
+.fylo {
+    min-width:100px;
+    width:37%;
+    max-width: 300px;
+    background-color: #fff;
+    opacity: .85;
+    margin:1rem;
+    border-radius:5px 50px 5px 5px;
+    height:150px;
+    -webkit-border-radius:5px 50px 5px 5px;
+    -moz-border-radius:5px 50px 5px 5px;
+    -ms-border-radius:5px 50px 5px 5px;
+    -o-border-radius:5px 50px 5px 5px;
+
+}
+
+#icon-storage {
+    display:inline-block;
+    width:30px;
+    height: 30px;
+   
+}
+
+.fylo-head {
+    padding-left:2rem;
+    padding-top:2rem;
+
+}
+
+.fylo-head > h3 {
+    display: inline;
+    font-size: 2rem;
+}
+
+.options {
+    padding-left:2rem;
+    padding-top:1rem;
+
+
+
+}
+
+#icon-file,
+#icon-folder,
+#icon-upload {
+    width:30px;
+    height:30px;
+    background-color: rgba(216, 216, 216, 0.425);
+    padding:.4rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#icon-folder,
+#icon-upload {
+    margin-left:1rem;
+}
+
+
+
+.storage {
+    min-width: 250px;
+    width: 55%;
+    max-width:600px;
+    background-color: #fff;
+   
+    opacity:.85;
+    height:140px;
+    position: relative;
+    border-radius:5px 5px 5px 5px;
+    padding:2rem;
+    -webkit-border-radius:5px 5px 5px 5px;
+    -moz-border-radius:5px 5px 5px 5px;
+    -ms-border-radius:5px 5px 5px 5px;
+    -o-border-radius:5px 5px 5px 5px;
+}
+
+.bar {
+    width:100%;
+    height:15px;
+    display: block;
+    background-color: rgb(211, 203, 203);
+    margin:1rem 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.percentaje {
+    width:81.5%;
+    height:15px;
+    background: rgb(255,151,148);
+    background: linear-gradient(90deg, rgba(255,151,148,1) 0%, rgba(250,82,147,1) 100%);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.gb-left {
+    position: absolute;
+    width:170px;
+    height:50px;
+    background-color: rgba(216, 216, 216, 0.925);
+    top:-2rem;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    right:2rem;
+    padding:2rem;
+    border-radius: 5px 5px 0 5px;
+    -webkit-border-radius: 5px 5px 0 5px;
+    -moz-border-radius: 5px 5px 0 5px;
+    -ms-border-radius: 5px 5px 0 5px;
+    -o-border-radius: 5px 5px 0 5px;
+    justify-self: center;
+
+
+
+}
+
+.gb-left p {
+    display: inline;
+    margin:.1rem;
+}
+
+.gb-ammount {
+    font-weight: bold;
+    font-size: 1.6rem;
+    
+}
+
+.triangle {
+    position: absolute;
+    right: 0;
+    bottom:-1rem;
+	width: 0;
+    height:0;
+	border-left: 25px solid transparent;
+	border-right:0px solid transparent;
+    border-top: 30px solid rgba(216, 216, 216, 0.925);
+}
+
+.gb {
+    display:flex ;
+    justify-content: space-between;
+}
+
+
+@media (max-width:600px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .storage {
+        height:170px;
+        text-align: center;
+    }
+
+    .gb-left {
+        top:9.5rem;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        border-radius: 5px    ;
+        -webkit-border-radius: 5px    ;
+        -moz-border-radius: 5px    ;
+        -ms-border-radius: 5px    ;
+        -o-border-radius: 5px    ;
+}
+
+    .triangle {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+}
